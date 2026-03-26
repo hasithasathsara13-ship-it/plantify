@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantify - Bonsai Product Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/product_styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">🌱 Plantify.</div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="home.html">Plant Collection</a>
+            <a href="home.html">About Us</a>
+            <a href="home.html">Contact Us</a>
+        </nav>
+        <div class="nav-icons">
+            <nav b>
+  <a href="tracking.html">Tracking</a>
+  </nav b>
+            <a href="profile.html"><i class="ri-user-line"></i></a>
+            <i class="ri-shopping-cart-2-line"></i>
+            
+        </div>
+    </header>
+
+    <div class="product_photo">
+        <div class="product_grid">
+            <div class="product_card"><img src="assets/img/pro1.jpg" alt="Bonsai 1"></div>
+            <div class="product_card"><img src="assets/img/pro2.jpg" alt="Bonsai 2"></div>
+            <div class="product_card"><img src="assets/img/pro3.jpg" alt="Bonsai 3"></div>
+            <div class="product_card"><img src="assets/img/pro4.jpg" alt="Bonsai 4"></div>
+        </div>
+
+        <div class="info">
+            <button class="newrelease">New Release</button>
+            <h2 id="product_name">Bonsai - Nature Indoor Beauty</h2>
+            <h3 id="product_price">Rs.3000</h3>
+
+            <div class="pot_color">
+                <p class="section_label">POT COLOR</p>
+                <div class="color_variations">
+                    <input type="radio" name="color_select" id="color1" checked>
+                    <input type="radio" name="color_select" id="color2">
+                    <input type="radio" class="color_select"id="color3">
+
+                    <label for="color1" class="color_circle grey active"></label>
+                    <label for="color2" class="color_circle black"></label>
+                    <label for="color3" class="color_circle blue"></label>
+
+
+                    <div class="active_ring"></div>
+                </div>
+            </div>
+
+            <div class="size_section">
+                <div class="size_header">
+                    <p class="section_label">SIZE</p>
+                    <a href="#" class="size_chart">SIZE CHART IN CM</a>
+                </div>
+                <div class="size_options">
+  <button class="size_btn active" data-price="3000">SMALL</button>
+  <button class="size_btn" data-price="4500">MEDIUM</button>
+  <button class="size_btn" data-price="6000">LARGE</button>
+  <button class="size_btn" data-price="8500">EX.LARGE</button>
+</div>
+            </div>
+
+            <div class="action_btns">
+    <button class="add_to_cart">ADD TO CART</button>
+
+    <button class="wishlist_btn">
+        <i class="ri-heart-line"></i>
+    </button>
+</div>
+
+<a href="checkout.html">
+    <button class="buy_now">BUY IT NOW</button>
+</a>
+
+<div class="about_product"> 
+                <p class="aboutheading">ABOUT THE PRODUCT</p>
+                <p class="abouttext">
+                    Bring peace, elegance, and natural charm into your space with our beautifully crafted Mini Bonsai Tree. Carefully nurtured and shaped, this bonsai adds a touch of serenity to your home, office, or workspace.
+                    <br><br>
+                    Why You’ll Love It:
+                    <ul class="benefit_list">
+                        <li>Low maintenance and easy to care for</li>
+                        <li>Perfect for indoor decoration</li>
+                        <li>Ideal gift for birthdays and housewarmings</li>
+                        <li>Enhances focus, calmness, and air freshness</li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cartOverlay"></div>
+<div class="cart-side" id="cartSide">
+  <div class="cart-header">
+    <h3>Shopping Cart (<span id="cartCount">0</span>)</h3>
+    <i class="ri-close-line" id="closeCart"></i>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-footer">
+    <h4>Total: Rs.<span id="cartTotal">0</span></h4>
+    <button class="checkout-btn">Checkout</button>
+  </div>
+</div>
+    
+
+  <script src="assets/js/product_page.js"></script>
+
+</body>
+</html>

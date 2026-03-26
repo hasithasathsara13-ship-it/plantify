@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+
+      <!--=============== SWIPER CSS ===============-->
+      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles1.css">
+
+      <title>Responsive login form with slider images - Bedimcode</title>
+   </head>
+   <body>
+      <div class="login container grid">
+         <div class="login__container grid">
+            <div class="login__swiper swiper">
+               <div class="login__swiper-data">
+               </div>
+
+
+               <div class="swiper-wrapper">
+                  <img src="assets/img/img-1.jpg" alt="image" class="login__swiper-img swiper-slide">
+
+                  <img src="assets/img/img-2.jpg" alt="image" class="login__swiper-img swiper-slide">
+                  
+                  <img src="assets/img/img-3.jpg" alt="image" class="login__swiper-img swiper-slide">
+               </div>
+
+               <div class="swiper-pagination"></div>
+            </div>
+   
+            <div class="login__area grid">
+               <div class="login__data">
+                  <h2 class="login__title">Get Started Now</h2>
+      
+                  <p class="login__description">Please enter you details.</p>
+      
+                  <button class="login__button-border">
+                     <i class="ri-google-fill"></i> Sign up with Google
+                  </button>
+               </div>
+   
+               <span class="login__line">or</span>
+   
+               <form action="" class="login__form">
+                  <div class="login__content grid">
+
+                    <div class="login__box">
+                        <input type="text" name="name" placeholder="Name" class="login__input">
+                        <i class="ri-user-line"></i>
+                     </div>
+
+                     <div class="login__box">
+                        <input type="email" name="email" placeholder="Email" class="login__input">
+                        <i class="ri-mail-line"></i>
+                     </div>
+      
+                     <div class="login__box">
+                        <input type="password" name="password" placeholder="Password" class="login__input" id="loginPass">
+                        <i class="ri-eye-line login__eye" id="loginEye"></i>
+                     </div>
+                  </div>
+   
+   
+                  <button type="submit" class="login__button">Sign Up</button>
+               </form>
+               
+               <p class="login__switch">
+                  Don’t have an account? 
+                  <a href="index.html" class="login__sign">Sign in</a>
+               </p>
+            </div>
+         </div>
+      </div>
+      
+      <!--=============== SWIPER JS ===============-->
+      <script src="assets/js/swiper-bundle.min.js"></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>

@@ -1,0 +1,325 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#f4fbf7;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+    background:white;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:600;
+    color:#2e7d32;
+}
+
+nav a{
+    margin:0 15px;
+    text-decoration:none;
+    color:#222;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#4caf50;
+}
+
+.nav-icons{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.nav-icons i{
+    font-size:22px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.nav-icons i:hover{
+    color:#4caf50;
+}
+
+.btn{
+    background:#4caf50;
+    color:white;
+    border:none;
+    padding:10px 22px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:500;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#388e3c;
+}
+
+/* ================= GRID ================= */
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:flex-start;
+    padding:50px;
+    padding-left: 12rem;
+    gap: 20px;
+}
+
+/* ================= LEFT SIDE ================= */
+
+.tracker h1{
+    font-size:60px;
+    font-weight:700;
+    color:#1f3d2b;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.tracker p{
+    color:#7a8b85;
+    max-width:500px;
+    margin-bottom:30px;
+}
+
+/* Tracking Input */
+
+.tracking-box{
+    display:flex;
+    width:450px;
+    background:#dce9e3;
+    border-radius:12px;
+    overflow:hidden;
+    margin-bottom:40px;
+}
+
+.tracking-box input{
+    flex:1;
+    padding:16px;
+    border:none;
+    outline:none;
+    background:transparent;
+    font-size:15px;
+}
+
+.tracking-box button{
+    background:#42b883;
+    border:none;
+    padding:0 35px;
+    color:white;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.tracking-box button:hover{
+    background:#2f9d6e;
+}
+
+/* ================= TRACKING STEPS ================= */
+
+/* ================= TRACKING STEPS ================= */
+
+.track-box {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Controlled spacing between cards */
+    position: relative;
+    width: 450px;
+    height: auto; /* REMOVE the 40px height that was squashing things */
+}
+
+/* Vertical Connector Line */
+.track-box::before {
+    content: "";
+    position: absolute;
+    right: 43px; /* Centers under the status circles */
+    top: 30px;
+    bottom: 30px;
+    width: 2px;
+    border-left: 2px dashed #ccc;
+    z-index: 0;
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    padding: 12px 25px; /* Vertical padding creates the card height */
+    border-radius: 18px;
+    background: #f5f5f5;
+    position: relative;
+    z-index: 1;
+}
+
+.step.active {
+    background: #e9f7ef;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background: #fff; /* White background for icons looks cleaner */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: #999;
+}
+
+.step.active .icon {
+    background: #c8ebd7;
+    color: #2f9d6e;
+}
+
+.text {
+    flex: 1;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* THIS REMOVES THE HIGHLIGHTED SPACE */
+.text p {
+    margin: 0; /* Removes browser default paragraph spacing */
+    line-height: 1.2; /* Tightens the vertical stack */
+}
+
+.small {
+    font-size: 13px;
+    color: #888;
+}
+
+.bold {
+    font-size: 17px;
+    font-weight: 700;
+    color: #333;
+}
+
+.status {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #42b883;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.status.circle {
+    background: #e0e0e0;
+    border: 3px solid #f5f5f5; /* Creates the gap effect around the dot */
+}
+
+/* ================= RIGHT IMAGE ================= */
+
+.bicycle img{
+    width:100%;
+    max-width:1000px;
+}
+
+.cart-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  z-index: 998;
+}
+.cart-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+.cart-side {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 270px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -5px 0 25px rgba(0,0,0,0.15);
+  transition: 0.4s ease;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.cart-side.active {
+  right: 0;
+}
+.cart-items {
+  flex: 1;
+  overflow-y: auto;
+  margin-top: 20px;
+}
+.cart-item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+.cart-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.cart-info {
+  flex: 1;
+}
+.cart-info h5 {
+  font-size: 14px;
+}
+.quantity-control {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.quantity-control button {
+  background: #4caf50;
+  border: none;
+  color: white;
+  padding: 3px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.checkout-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;   /* same green */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.checkout-btn:hover {
+  background-color: #388e3c;   /* darker green on hover */
+}
+.cart-footer {
+  margin-top: auto;
+  padding-top: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}

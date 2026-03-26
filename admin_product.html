@@ -1,0 +1,109 @@
+<html>
+<head>
+    <title>Admin Console</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles_adminproduct.css">
+</head>
+<body>
+    <header class="navbar">
+    <div class="logo">🌱 Plantify.</div>
+
+    <div class="nav-icons">
+       <a href="index.html"> <button class="btn">Log out</button> </a>
+    </div>
+</header>
+<div class="grid">
+    <div class="details">
+        <!-- Basic details and forms -->
+         <h3>Basic Deatils</h3>
+         <label>Product Name</label>
+         <input type="text" placeholder="Enter product description" id="product_name"></textarea>
+         <label></label>
+         <label>Product Description</label>
+         <textarea rows="5" placeholder="Enter product description"></textarea>
+         <h3>Pricing</h3>
+         <label>Product price</label>
+         <input type="number" id="product_price"></textarea>
+         <h3>Inventory</h3>
+         <div class="inventory_grid">
+            <div class="quatity">
+                <label>Stock Quatity</label>
+                <input type="number" id="product_quantity"></textarea>
+            </div>
+
+            <div class="status">
+                <label>Stock Status</label>
+                <select>
+                    <option>In Stock</option>
+                    <option>Out of Stock</option>
+                </select>
+            </div>
+            
+         </div>
+         <div class="toggle">
+            <input type="checkbox" id="unlimited">
+            <label for="unlimited">Unlimited</label>
+        </div>
+
+        <div class="buttons">
+            <button class="draft">Save to draft</button>
+            <button class="publish">Publish Product</button>
+        </div>
+         
+
+       
+
+         <!-- Basic details and forms -->
+    </div>
+<div class="photo">
+    <!-- upload image -->
+     <h2>Upload Product Image</h2>
+
+        <div class="upload-box">
+            <img src="assets/images/Bonsai 2.png" alt="Product Image">
+            <div class="upload-buttons">
+                <button>Browse</button>
+                <button>Replace</button>
+            </div>
+        </div>
+
+        <div class="thumbnail-row">
+            <div class="thumb"></div>
+            <div class="thumb"></div>
+            <div class="thumb add">+ Add Image</div>
+        </div>
+
+        <h3>Categories</h3>
+
+        <label>Product Categories</label>
+        <select>
+            <option>Flower Bouquet</option>
+            <option>Indoor Plants</option>
+            <option>Outdoor Plants</option>
+            <option>Bonsai</option>
+        </select>
+
+        <label>Select your pot color</label>
+        <div class="color-row">
+            <div class="color green"></div>
+            <div class="color pink"></div>
+            <div class="color gray"></div>
+            <div class="color beige"></div>
+            <div class="color dark"></div>
+        </div>
+
+
+
+
+
+       
+
+    <!-- upload -->
+</div>    
+
+
+</div>
+
+
+</body>
+</html>

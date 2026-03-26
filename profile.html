@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles_profile.css">
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <title>Profile</title>
+</head>
+<body>
+
+    <header class="navbar">
+  <div class="logo">🌱 Plantify.</div>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="home.html">Plant Collection</a>
+    <a href="home.html">About Us</a>
+    <a href="home.html">Contact Us</a>
+  </nav>
+  
+ <div class="nav-icons">
+<nav b>
+  <a href="tracking.html">Tracking</a>
+  </nav b>
+<i class="ri-user-line"></i>
+<i class="ri-shopping-cart-2-line"></i>
+ 
+</div>
+</header>
+  <div class="welcome">
+   
+  </div>
+  <div class="profile_header">
+    <div class="profile_left">
+        <img src="assets/images/Ellipse 3.png" alt="dp">
+        <div>
+            <h2>Hasitha Sathsara</h2>
+            <p>hasithasathsara@icloud.com</p>
+        </div>
+    </div>
+
+    
+</div>
+
+<div class="grid">
+
+<div class="left">
+
+<label>Full Name</label>
+<input type="text" placeholder="Your First Name">
+
+<label>Gender</label>
+<select>
+<option>Male</option>
+<option>Female</option>
+<option>I prefer not to</option>
+</select>
+
+<label>Language</label>
+<select>
+<option>English</option>
+<option>Sinhala</option>
+<option>German</option>
+</select>
+
+</div>
+
+
+<div class="right">
+
+<label>Nick Name</label>
+<input type="text" placeholder="Your Nick Name">
+
+<label>Country</label>
+<select>
+<option>India</option>
+<option>Sri Lanka</option>
+<option>USA</option>
+</select>
+
+<label>Time Zone</label>
+<select>
+<option>GMT 0.00</option>
+<option>GMT +5:30</option>
+</select>
+
+</div>
+
+</div>
+  <div class="order_history">
+<h3>Order History</h3>
+
+<table>
+<tr>
+<th>Product</th>
+<th>Order Number</th>
+<th>Total</th>
+<th>Status</th>
+<th>Attributes</th>
+</tr>
+
+<tr>
+<td>
+<div class="product">
+<img src="assets/images/3.png">
+<div>
+<b>White Roses</b><br>
+<small>Bright to be Bouquet</small>
+</div>
+</div>
+</td>
+<td>#202152</td>
+<td>Rs.4500</td>
+<td><span class="status returned">Returned</span></td>
+<td>Color: White<br>Size: S</td>
+</tr>
+
+<tr>
+<td>
+<div class="product">
+<img src="assets/images/Peacock Plant.png">
+<div>
+<b>Peacock Plant</b><br>
+<small>Celebrated for its stunning foliage</small>
+</div>
+</div>
+</td>
+<td>#202152</td>
+<td>Rs.2900</td>
+<td><span class="status delivered">Delivered</span></td>
+<td>Color: Yellow<br>Size: Regular</td>
+</tr>
+
+</table>
+</div>
+
+
+<div class="cart-overlay" id="cartOverlay"></div>
+<div class="cart-side" id="cartSide">
+  <div class="cart-header">
+    <h3>Shopping Cart (<span id="cartCount">0</span>)</h3>
+    <i class="ri-close-line" id="closeCart"></i>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-footer">
+    <h4>Total: Rs.<span id="cartTotal">0</span></h4>
+    <button class="checkout-btn">Checkout</button>
+  </div>
+</div>
+<script src="assets/js/product_page.js"></script>
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
